@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Forgive and Baguette</title>
+  </head>
+  <body>
+    <div id="contents">
+      <div id="header">
+        <ul>
+          <li>
+            <img class="toggle-menu" onclick="show()" src="hamburger icon.svg" alt="Menu icon" />
+          </li>
+          <li>
+            <h1><a class="index" href="index.html">Forgive and Baguette</a></h1>
+          </li>
+          <li><a class="signin" href="">Sign In</a></li>
+          <li><a class="buy" href="shop.html">Buy</a></li>
+          <li><img src="favourites_icon.svg" alt="Heart icon" /></li>
+          <li>
+            <img
+              src="https://img.icons8.com/material-outlined/24/null/shopping-cart--v1.png"
+              alt="Shopping cart"
+            />
+          </li>
+          <li class="search">
+            <img src="search_icon.svg" alt="Magnifying glass icon" />
+          </li>
+        </ul>
+      </div>
+      <div id="sidebar">
+        <ul>
+          <li>General</li>
+          <li>Bagels</li>
+          <li>Biscuits</li>
+          <li>Bread</li>
+          <li>Breakfast</li>
+          <li>Candy</li>
+          <li>Cake</li>
+          <li>Cheesecake</li>
+          <li>Cookies</li>
+          <li>Cupcakes</li>
+          <li>Gluten Free</li>
+          <li>Ice Cream</li>
+          <li>Muffins</li>
+          <li>Pie</li>
+          <li>Vegan</li>
+        </ul>
+      </div>
+      <div class="hero">
+        <!-- <div class="featured"><h1>Featured recipe</h1></div>
+        <div class="baguette-hero"><h1>Baguette</h1></div> -->
+      </div>
+      <div class="content-wrapper">
+        <h2 class="categories-title">Categories</h2>
+        <div class="cat-wrapper">
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="doughnuts.jpg"
+                alt="Doughnuts with cream and fruit"
+              />
+            </div>
+            <div class="caption">General</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="bagels.jpg"
+                alt="Assortment of bagels"
+              />
+            </div>
+            <div class="caption">Bagels</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="biscuits.jpg"
+                alt="Tower of four American style biscuits"
+              />
+            </div>
+            <div class="caption">Biscuits</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="bread.jpg"
+                alt="Tower of sliced baguette"
+              />
+            </div>
+            <div class="caption">Bread</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="breakfast.jpg"
+                alt="Waffles with blueberries and peaches"
+              />
+            </div>
+            <div class="caption">Breakfast</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="candy.jpg"
+                alt="Sugar coated gummy worms"
+              />
+            </div>
+            <div class="caption">Candy</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="cake.jpg"
+                alt="Slice of frosted cake with pink sprinkles"
+              />
+            </div>
+            <div class="caption">Cake</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="cheesecake.jpg"
+                alt="Slice of cheesecake with blueberry compote on top"
+              />
+            </div>
+            <div class="caption">Cheesecake</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="cookies.jpg"
+                alt="Array of chocolate chip cookies"
+              />
+            </div>
+            <div class="caption">Cookies</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <a href="cupcake-list.html"><img 
+                class="cat-images"
+                src="cupcakes.jpg"
+                alt="Array of red velvet cupcakes"
+              /></a>
+            </div>
+            <div class="caption"><a href="cupcake-list.html">Cupcakes</a></div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="gluten-free.jpg"
+                alt="Stack of gluten free puffs"
+              />
+            </div>
+            <div class="caption">Gluten Free</div>
+          </div>
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="ice-cream.jpg"
+                alt="Bowl of raspberry ice cream"
+              />
+            </div>
+            <div class="caption">Ice Cream</div>
+          </div>
+
+          <div class="cat-card">
+            <div>
+              <img
+                class="cat-images"
+                src="muffins.jpg"
+                alt="Blueberry muffins"
+              />
+              <div class="caption">Muffins</div>
+            </div>
+          </div>
+          <div class="cat-card">
+            <img
+              class="cat-images"
+              src="pie.jpg"
+              alt="Rhubarb pie with vanilla sauce"
+            />
+            <div class="caption">Pie</div>
+          </div>
+          <div class="cat-card">
+            <img
+              class="cat-images"
+              src="vegan.jpg"
+              alt="Vegan chocolate cake"
+            />
+            <div class="caption">Vegan</div>
+          </div>
+        </div>
+      </div>
+      <div class="inspiration">
+        <h2>Inspiration</h2>
+        <div class="inspo1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+            quibusdam nesciunt beatae est quasi iure, dignissimos, voluptate
+            eius fugit delectus quisquam dolorum ex blanditiis error velit,
+            perferendis necessitatibus id. Ducimus!
+          </p>
+          <img
+            class="inspo-img"
+            src="inspo1.jpg"
+            alt="Dessert charcuterie board"
+          />
+        </div>
+        <div class="inspo2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+            recusandae, deserunt ullam dolore natus praesentium deleniti quae
+            voluptatem beatae qui possimus veniam ratione, consequuntur
+            provident! Consectetur laborum expedita earum cum!
+          </p>
+          <img
+            class="inspo-img2"
+            src="inspo2.jpg"
+            alt="Chocolate cupcake with caramel dripping"
+          />
+        </div>
+      </div>
+      <footer class="footer">
+        Forgive and Baguette 2022
+        <a target="_blank" href="https://icons8.com/icon/84026/menu"
+          >Menu icon by Icons8</a
+        >
+        <a target="_blank" href="https://iconmonstr.com/favorite-4-svg/"
+          >Heart icon by Iconmonstr</a
+        >
+        <a target="_blank" href="https://icons8.com/icon/85080/shopping-cart"
+          >Shopping Cart icon by Icons8</a
+        >
+      </footer>
+    </div>
+    <script src="interactive.js"></script>
+  </body>
+</html>
