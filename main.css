@@ -41,10 +41,9 @@ button {
 #contents {
   display: grid;
   grid-template-columns: 6em 1fr 6em;
-  grid-template-rows: 6em 0.2fr 1fr 0.1fr 5em;
+  grid-template-rows: 6em 1fr 0.1fr 5em;
   grid-template-areas:
     "header header header"
-    "hero hero hero"
     ". categories ."
     ". inspiration ."
     "footer footer footer";
@@ -142,7 +141,7 @@ button {
     height: 6em;
     top: 0;
     background-color: var(--clr-cream);
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
   }
 
   #header > ul {
@@ -195,70 +194,21 @@ button {
     overflow: hidden;
   }
 }
-  @media only screen and (max-width: 480px) {
-    #header > ul {
-      display: flex;
-      align-content: space-between;
-    }
-    #header > ul > li:nth-child(2) {
-      margin-right: auto;
-      font-size: 12px;
-    }
+@media only screen and (max-width: 480px) {
+  #header > ul {
+    display: flex;
+    align-content: space-between;
   }
-
-  @media only screen and (max-width: 375px) {
-    #header > ul > li:nth-child(2) {
-      font-size: 10px;
-      line-height: 2em;
-    }
+  #header > ul > li:nth-child(2) {
+    margin-right: auto;
+    font-size: 12px;
   }
-
-  /* #header > ul > li:nth-child(7) {
-    left: 1em;
-    display: block;
-    position: sticky;
-  } */
-
-.hero {
-  grid-area: hero;
-  /* Background: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0,0,0, 0.5),
-        rgba(0,0,0, 0.5)
-      )
-      0 0 / 1000% no-repeat,
-    url(http://source.unsplash.com/BXeJttTeD_s)
-      0 0 / cover no-repeat;
-  animation: gradient 2s ease;
-  color: white;
-  font-size: 30px; */
 }
 
-/* .baguette-hero {
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  
-}
-
-.featured {
-  grid-area:hero;
-  padding-left: 3em;
-}
-
-@keyframes gradient {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-} */
-
-@media only screen and (max-width: 1400px) {
-  .hero {
-    height: 0.2fr;
+@media only screen and (max-width: 375px) {
+  #header > ul > li:nth-child(2) {
+    font-size: 10px;
+    line-height: 2em;
   }
 }
 
@@ -395,6 +345,9 @@ button {
 @media only screen and (max-width: 900px) {
   #contents {
     grid-template-rows: auto;
+  }
+  .content-wrapper {
+    margin-top: 6em;
   }
 
   .cat-wrapper {
