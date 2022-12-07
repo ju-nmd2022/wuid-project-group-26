@@ -1,13 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Forgive and Baguette - Chocolate Cupcake With Caramel Frosting</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="caramel.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+    <script
+    src="https://kit.fontawesome.com/19bbb51b78.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>
+      Forgive and Baguette - Chocolate Cupcake With Caramel Frosting
+    </title>
+  </head>
+  <body>
+    <div id="header">
+      <ul>
+        <li>
+          <img
+            class="toggle-menu"
+            onclick="show()"
+            src="hamburger icon.svg"
+            alt="Menu icon"
+          />
+        </li>
+        <li>
+          <h1><a class="index" href="index.html">Forgive and Baguette</a></h1>
+        </li>
+        <li><a class="signin" href="">Sign In</a></li>
+        <li><a class="buy" href="shop.html">Buy</a></li>
+        <li><img src="favourites_icon.svg" alt="Heart icon" /></li>
+        <li>
+          <img
+            src="https://img.icons8.com/material-outlined/24/null/shopping-cart--v1.png"
+            alt="Shopping cart"
+          />
+        </li>
+        <li class="search">
+          <img src="search_icon.svg" alt="Magnifying glass icon" />
+        </li>
+      </ul>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li>General</li>
+        <li>Bagels</li>
+        <li>Biscuits</li>
+        <li>Bread</li>
+        <li>Breakfast</li>
+        <li>Candy</li>
+        <li>Cake</li>
+        <li>Cheesecake</li>
+        <li>Cookies</li>
+        <li>Cupcakes</li>
+        <li>Gluten Free</li>
+        <li>Ice Cream</li>
+        <li>Muffins</li>
+        <li>Pie</li>
+        <li>Vegan</li>
+      </ul>
+    </div>
+
 </head>
-<body>
-    
-</body>
+  
+<div class="hero">
+    <section id="hero">
+      <img class="left-side" src="muffin.jpg" alt="choco"/>
+      <div class="right-side">
+        <p class="h1">Chocolate cupcake with caramel frosting</p>
+        <h2>
+          Imagine a juicy chocolate muffin with a caramel hide topped with a
+          fluffy caramel frosting, garnished with lots of coarsely chopped
+          chocolate and peanuts. Yes, you can hear for yourself how fantastic
+          it sounds! And these cupcakes ARE amazingly delicious.
+        </h2>
+
+  
+    </div>
+    </section>
+    <div class="icons">
+      <article>
+        <i class="fa-solid fa-clock"></i>
+        <h3>Prep time</h3>
+        <p>45 min</p>
+      </article>
+      <article>
+        <i class="fa-regular fa-clock"></i>
+        <h3>Cook time</h3>
+        <p>16 min</p>
+      </article>
+      <article>
+        <i class="fa-solid fa-user-group"></i>
+        <h3>Quantity</h3>
+        <p>12 muffins</p>
+      </article>
+      <a href="shop.html"><button class="buyy">Buy ingredients</button></a>
+      <div class="heart"> 
+         <img id="image" src="heart-regular.svg" onclick="changeImage(this)"/>
+        <img id="full" src="heart-solid.svg"/> 
+      
+      </div> 
+    </div>
+
+    <div id="main" class="recipe">
+      <div class="container">
+        <h4>Muffins Instructions</h4>
+        <ol class="muffinslist">
+          <li>
+            Set the oven to 175 degrees and distribute cupcake forms in a
+            cupcake tray.
+          </li>
+          <li>Melt the butter in a saucepan and pour into a bowl.</li>
+          <li>
+            Mix the melted butter with vanilla sugar, milk, water and eggs to
+            a smooth batter.
+          </li>
+          <li>
+            Then add wheat flour, cocoa, baking powder and caster sugar. Mix
+            to a smooth batter.
+          </li>
+          <li>
+            Divide the batter into 2/3 of the cupcake molds and bake in the
+            middle of the oven for about 15 minutes. Allow to cool completely
+            before garnishing.
+          </li>
+        </ol>
+        <h5>Frosting Instructions</h5>
+        <ol class="frostinglist">
+          <li>
+            Beat the butter and cream cheese together until fluffy before
+            adding the dulche de leche. Whisk together to make a smooth and
+            fluffy frosting.
+          </li>
+          <li>
+            Make a hole in the center of each muffin and put some dulche de
+            leche in each hole.
+          </li>
+          <li>
+            Spread the frosting on each muffin and top generously with roughly
+            chopped peanuts and chocolate.
+          </li>
+          <li>Serve immediately or store in the refrigerator.</li>
+        </ol>
+      </div>
+      <div class="container2">
+        <h6>Ingredients muffins</h6>
+        <ul class="ingredientsmuffin">
+          <li>75 g of butter</li>
+          <li>1 tsp vanilla sugar</li>
+          <li>1.5 dl milk</li>
+          <li>0.5 dl water</li>
+          <li>1 egg</li>
+          <li>3 dl wheat flour</li>
+          <li>1 cup of cocoa</li>
+          <li>2 teaspoons baking powder</li>
+          <li>2.5 dl granulated sugar</li>
+        </ul>
+        <p class="frosting">Ingredients frosting</p>
+        <ul class="ingredients">
+          <li>200 g soft butter</li>
+          <li>200 g cream cheese</li>
+          <li>
+            1/2 can dulche de leche à 397 grams (use the rest to fill the
+            cupcakes)
+          </li>
+          <li>
+            2 dl roasted and salted peanuts + 100 g dark chocolate that has
+            been coarsely chopped together
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+    <footer class="footer">
+      Forgive and Baguette 2022
+      <a target="_blank" href="https://icons8.com/icon/84026/menu"
+        >Menu icon by Icons8</a
+      >
+      <a target="_blank" href="https://iconmonstr.com/favorite-4-svg/"
+        >Heart icon by Iconmonstr</a
+      >
+      <a target="_blank" href="https://icons8.com/icon/85080/shopping-cart"
+        >Shopping Cart icon by Icons8</a
+      >
+    </footer>
+    <script src="interactive.js"></script>
+  </body>
 </html>

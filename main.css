@@ -391,6 +391,283 @@ button {
 /* -- Cupcake category page -- */
 
 /* -- Cupcake recipe page -- */
+body {
+  margin-top: 6em;
+}
+
+#hero {
+  display: flex;
+}
+
+.left-side {
+  margin: 2em;
+  width: 100%;
+  height: 550px;
+  /* border-radius: 10px; */
+  animation: slide-right 1s ease-in;
+  animation-delay: 1s;
+}
+
+#hero .right-side {
+  animation: slide-left 1s ease-in;
+  animation-delay: 1s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-right: 700px;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -700px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+#hero .right-side h1 {
+  width: 1.25fr;
+  margin-left: 1.1em;
+  margin-top: 3em;
+}
+
+#hero .right-side h2 {
+  width: 1.25fr;
+  margin-left: 2.5em;
+  margin-top: -1em;
+}
+
+.icons {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(3, 7em);
+  width: 350px;
+  height: 140px;
+  font-family: harmattan;
+  font-size: 12pt;
+  text-align: center;
+  line-height: 1em;
+  margin-top: -13em;
+  /* margin-bottom: -1em; */
+  background-color: #f2e8e6;
+  margin-left: 880px;
+  /* border-radius: 10px; */
+}
+
+.h1 {
+  font-family: harmattan;
+  font-size: 36pt;
+  font-weight: 600;
+  color: #90604c;
+  margin-top: 0.8em;
+  line-height: 1em;
+  margin-left: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-family: harmattan;
+  font-size: 18pt;
+  padding-right: 1em;
+  font-weight: 100;
+  line-height: 1.3em;
+  margin-bottom: -0.5em;
+}
+
+.buyy {
+  display: absolute;
+  text-transform: uppercase;
+  font-size: 20pt;
+  background-color: #f2e8e6;
+  font-family: harmattan;
+  width: 250px;
+  height: 50px;
+  margin-left: 0px;
+  margin-top: 1.1em;
+  /* border-radius: 10px; */
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 2fr 1.25fr;
+  grid-gap: 1.5em;
+  padding-right: 0.5em;
+  padding-bottom: 2.5em;
+}
+
+/* li {
+  font-size: 16pt;
+  font-family: harmattan;
+  padding: 0em;
+} */
+
+.ingredientsmuffin {
+  font-size: 16pt;
+  font-family: harmattan;
+}
+
+.ingredients {
+  font-size: 16pt;
+  font-family: harmattan;
+  padding: 0em;
+  margin-left: 2em;
+}
+
+.frostinglist {
+  font-size: 16pt;
+  font-family: harmattan;
+}
+
+.container2 {
+  background-color: #f2e8e6;
+  padding: 1.5em;
+  font-family: harmattan;
+  font-size: 24pt;
+  margin-top: 1.6em;
+  /* border-radius: 10px; */
+}
+.container {
+  padding: 1em;
+  margin-left: -0.9em;
+  margin-top: -0.5em;
+}
+
+h4 {
+  font-family: harmattan;
+  font-size: 26pt;
+  color: #90604c;
+  margin-bottom: -0.5em;
+}
+
+.muffinslist {
+  font-size: 16pt;
+  font-family: harmattan;
+}
+
+h5 {
+  font-family: harmattan;
+  font-size: 26pt;
+  color: #90604c;
+  margin-left: 0.1em;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+}
+
+h6 {
+  font-family: harmattan;
+  font-size: 26pt;
+  color: #90604c;
+  margin-top: -0.5em;
+  margin-bottom: -0.7em;
+}
+
+.frosting {
+  font-family: harmattan;
+  font-size: 26pt;
+  color: #90604c;
+  font-weight: 600;
+  margin-bottom: -0.7em;
+}
+.heart {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  margin-top: 165px;
+  margin-left: 278px;
+}
+
+#full {
+  visibility: hidden;
+}
+
+i {
+  margin-top: 1.6em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 3em;
+  padding-left: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  bottom: 0;
+  background-color: var(--clr-cream);
+  grid-area: footer;
+}
+
+@media screen and (max-width: 1350px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .left-side {
+    width: 100%;
+    height: auto;
+  }
+  .heart {
+    margin-left: 710px;
+    margin-top: -7.5em;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #hero .right-side h2 {
+    width: 60%;
+    margin-left: 0;
+  }
+  #hero .right-side p {
+    margin-left: 0em;
+  }
+  .icons {
+    margin-top: -8em;
+    margin-right: 2em;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #hero .right-side h2 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .icons {
+    margin-left: 0;
+    margin-top: 3em;
+  }
+  #main {
+    margin-top: 14em;
+  }
+  .container2 {
+    margin-top: -1 em;
+  }
+}
 
 /* -- Shop page -- */
 
