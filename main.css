@@ -53,7 +53,7 @@ button {
   overflow-x: hidden;
 }
 
-/* Header section */
+/* Header and sidebar section */
 
 #header {
   grid-area: header;
@@ -92,30 +92,6 @@ button {
   display: block;
   position: absolute;
   right: 4em;
-}
-
-#sidebar {
-  /*Navigation code provided by Codegrid on YouTube*/
-  position: fixed !important;
-  top: 6em;
-  width: 22em;
-  height: 100%;
-  background: var(--clr-cream);
-  left: -22em;
-  transition: 0.5s;
-}
-
-#sidebar > ul {
-  font-size: 24px;
-  list-style: none;
-}
-
-#sidebar.active {
-  left: 0;
-}
-
-.toggle-menu {
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 970px) {
@@ -212,6 +188,42 @@ button {
   }
 }
 
+#sidebar {
+  /*Navigation code provided by Codegrid on YouTube*/
+  position: fixed !important;
+  top: 6em;
+  width: 22em;
+  height: 100%;
+  background: var(--clr-cream);
+  left: -22em;
+  transition: 0.5s;
+  bottom: 1em;
+}
+
+#sidebar > ul {
+  font-size: 24px;
+  list-style: none;
+}
+
+#sidebar.active {
+  left: 0;
+  overflow-y: scroll;
+}
+
+.toggle-menu {
+  cursor: pointer;
+}
+
+.xtra-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  padding-left: 0;
+  padding-top: 1em;
+  margin: auto;
+}
+
 /* Categories section */
 
 .content-wrapper {
@@ -236,7 +248,6 @@ button {
   flex-direction: column;
   width: max-content;
   background-color: var(--clr-cream);
-  /* box-shadow: 0 5px 5px hsl(0, 0%, 0%, 15%); */
 }
 
 .caption {
@@ -319,19 +330,42 @@ button {
 }
 
 /* Footer section */
-
 .footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  grid-area: footer;
   width: 100vw;
   height: 3em;
-  padding-left: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin: auto 0;
   bottom: 0;
   background-color: var(--clr-cream);
-  grid-area: footer;
+}
+
+.footer > ul {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 100vw;
+    margin: auto;
+    padding-right: 3em;
+  }
+  .footer > ul {
+    padding-left: 1em;
+    padding-right: 3em;
+    margin: auto;
+  }
 }
 
 /* Media queries for home screen */
