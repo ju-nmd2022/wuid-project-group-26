@@ -333,6 +333,7 @@ button {
 }
 
 /* Footer section */
+
 .footer {
   grid-area: footer;
   width: 100vw;
