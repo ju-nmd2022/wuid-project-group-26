@@ -430,6 +430,23 @@ button {
   }
 }
 
+@media only screen and (max-width: 670px) {
+  .inspo1 {
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+  }
+  .inspo2 {
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .inspo1 {
+    margin: auto;
+  }
+}
+
 /* -- Shop page -- */
 
 #shop-contents {
