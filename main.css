@@ -232,6 +232,11 @@ button {
   width: fit-content;
 }
 
+.categories-title {
+  margin: auto;
+  padding-bottom: 1em;
+}
+
 .cat-wrapper {
   grid-area: categories;
   display: grid;
