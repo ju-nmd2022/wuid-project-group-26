@@ -297,7 +297,6 @@ button {
   display: flex;
   flex-direction: row;
   background-color: var(--clr-cream);
-  /* box-shadow: 0 5px 5px hsl(0, 0%, 0%, 15%); */
   flex: 50%;
 }
 
@@ -305,7 +304,6 @@ button {
   display: flex;
   flex-direction: row;
   background-color: var(--clr-cream);
-  /* box-shadow: 0 5px 5px hsl(0, 0%, 0%, 15%); */
   flex: 50%;
 }
 
@@ -424,6 +422,11 @@ button {
     height: 20em;
     margin: auto 0;
     object-fit: cover;
+  }
+  
+  .inspo-img {
+    width: 20em;
+    height: 20em;
   }
 }
 
