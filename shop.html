@@ -33,6 +33,7 @@
           </li>
         </ul>
       </div>
+      
       <section class="shop-content-wrapper">
         <h2>Shop</h2>
         <p>We suggest these ingredients based on <a class="basedon" href="chocolate-caramel-cupcake.html">Chocolate cupcake with caramel frosting</a>...</p>
@@ -43,7 +44,7 @@
             <div class="item-title">Butter</div>
             <div class="item-price">
               66,50:-
-              <button class="item-button">Add</button>
+              <button id="btn" class="btn" onclick="changeImage()" >Add</button> 
             </div>
           </div>
           <div class="item-card">
@@ -134,10 +135,11 @@
               <button class="item-button">Add</button>
             </div>
           </div>
-          <div class="shopping-cart">1<img
-            src="https://img.icons8.com/material-outlined/24/null/shopping-cart--v1.png"
-            alt="Shopping cart"
-          /></div>
+          <div class="shopping-cart"><img id="cart"
+            src="cart-shopping-solid.svg"
+            alt="Shopping cart">
+            <img id="fullcart" src="cartfull.png">
+          </div>
       </section>
       <footer class="footer">
         Forgive and Baguette 2022
@@ -152,5 +154,6 @@
         >
       </footer>
     </div>
+      <script src="shop.js"></script>
   </body>
 </html>

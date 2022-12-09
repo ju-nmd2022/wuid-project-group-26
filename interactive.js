@@ -15,3 +15,5 @@ image.addEventListener("click", function () {
 function changeImage(image) {
   image.src = "heart-solid.svg";
 }
+
+// help from https://techfunda.com/howto/444/changing-of-images

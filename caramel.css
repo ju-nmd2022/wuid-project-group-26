@@ -211,15 +211,6 @@ body {
   }
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(700px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes slide-right {
   from {
     margin-left: -700px;
@@ -281,6 +272,7 @@ h2 {
 }
 
 .buyy {
+  cursor: pointer;
   display: absolute;
   text-transform: uppercase;
   font-size: 20pt;
@@ -438,6 +430,14 @@ i {
     margin-top: 2em;
   }
 
+  .left-side {
+    animation: none;
+  }
+
+  #hero .right-side {
+    animation: none;
+  }
+
   #hero .right-side h2 {
     width: 90%;
     height: auto;
@@ -457,7 +457,7 @@ i {
 
 @media screen and (max-width: 850px) {
   .container2 {
-    width: 85%;
+    width: 80%;
   }
   .container {
     width: 95%;

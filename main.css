@@ -424,7 +424,7 @@ button {
     margin: auto 0;
     object-fit: cover;
   }
-  
+
   .inspo-img {
     width: 20em;
     height: 20em;
@@ -478,6 +478,24 @@ button {
   height: 2em;
   padding: 1em;
   box-shadow: 0 5px 5px hsl(0, 0%, 0%, 15%);
+}
+
+#cart {
+  width: 30px;
+  margin-top: 0em;
+}
+
+#fullcart {
+  display: none;
+}
+
+#btn {
+  cursor: pointer;
+  padding: 0.5em;
+  margin-left: 10em;
+  color: var(--clr-brown);
+  background-color: var(--clr-brownlight);
+  border-style: none;
 }
 
 .shop-buttons {
