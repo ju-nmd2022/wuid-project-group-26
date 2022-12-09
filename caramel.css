@@ -206,9 +206,9 @@ a:visited {
 }
 
 
-/* body {
+body {
   margin-top: 6em;
-} */
+}
 
 #hero {
   display: flex;
