@@ -183,7 +183,7 @@ button {
 
 @media only screen and (max-width: 375px) {
   #header > ul > li:nth-child(2) {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 2em;
   }
 }
