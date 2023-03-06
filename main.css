@@ -225,16 +225,16 @@ button {
 }
 
 @media only screen and (min-width: 970px) {
-.xtra-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  display: none;
-  align-self: center;
-  padding-left: 0;
-  padding-top: 1em;
-  margin: auto;
-}
+  .xtra-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: none;
+    align-self: center;
+    padding-left: 0;
+    padding-top: 1em;
+    margin: auto;
+  }
 }
 
 /* Categories section */
