@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Forgive and Baguette</title>
+  </head>
+  <body>
+    <!-- Old code -->
+    <div id="sidebar">
+      <ul class="xtra-icons">
+        <li><a class="signin" href="">Sign In</a></li>
+        <li><a class="buy" href="shop.html">Buy</a></li>
+        <li><img src="favourites_icon.svg" alt="Heart icon" /></li>
+        <li>
+          <img
+            src="https://img.icons8.com/material-outlined/24/null/shopping-cart--v1.png"
+            alt="Shopping cart"
+          />
+        </li>
+      </ul>
+      <ul>
+        <li>General</li>
+        <li>Bagels</li>
+        <li>Biscuits</li>
+        <li>Bread</li>
+        <li>Breakfast</li>
+        <li>Candy</li>
+        <li>Cake</li>
+        <li>Cheesecake</li>
+        <li>Cookies</li>
+        <a class="cupcake" href="chocolate-caramel-cupcake.html">
+          <li>Cupcakes</li></a
+        >
+        <li>Gluten Free</li>
+        <li>Ice Cream</li>
+        <li>Muffins</li>
+        <li>Pie</li>
+        <li>Vegan</li>
+      </ul>
+    </div>
+    <div id="contents">
+      <div id="header">
+        <ul>
+          <li>
+            <img
+              class="toggle-menu"
+              onclick="show()"
+              src="hamburger icon.svg"
+              alt="Menu icon"
+            />
+          </li>
+          <li>
+            <h1><a class="index" href="index.html">Forgive and Baguette</a></h1>
+          </li>
+          <li><a class="signin" href="">Sign In</a></li>
+          <li><a class="buy" href="shop.html">Buy</a></li>
+          <li><img src="favourites_icon.svg" alt="Heart icon" /></li>
+          <li>
+            <img
+              src="https://img.icons8.com/material-outlined/24/null/shopping-cart--v1.png"
+              alt="Shopping cart"
+            />
+          </li>
+          <li class="search">
+            <img src="search_icon.svg" alt="Magnifying glass icon" />
+          </li>
+        </ul>
+      </div>
+
+      <!-- New -->
+      <div class="parent">
+        <div class="contentHeader"><p class="check">Check out</p></div>
+
+        <div class="shoppingBag">
+          <h1 class="heading1">Your shopping bag</h1>
+          <img class="butter" src="butter.jpg" />
+          <h2 class="heading2">Butter</h2>
+          <h3 class="heading3">Arla</h3>
+          <p class="price">Price 66,50kr</p>
+          <hr class="line-1" />
+          <p class="Shipping">Shipping 29kr</p>
+          <hr class="line-1" />
+          <p class="totalCost">Total 95,5kr</p>
+        </div>
+
+        <div class="information">
+          <h1 class="heading1">Your information</h1>
+          <h2 class="account">Already have an account?</h2>
+          <h2 class="signIn">Sign in</h2>
+          <hr class="line" />
+
+          <h2 class="name">Enter your name:</h2>
+          <input type="text" class="input-name" placeholder="Your name" />
+          <h2>Enter your adress</h2>
+          <input type="adress" class="input-adress" placeholder="Adress" />
+          <h2>Enter your email:</h2>
+          <input type="email" class="input-email" placeholder="Email" />
+          <h2>Enter your phone number:</h2>
+          <input type="text" class="input-number" placeholder="Phone number" />
+        </div>
+      </div>
+
+      <div class="container">
+        <button type="Submit" class="hej" onclick="openPopup()">
+          Place order
+        </button>
+        <div class="popup" id="popup">
+          <img class="tick" src="tick.png" />
+          <h4>Thank you!</h4>
+          <p class="final">
+            Your order has been succesfully placed and will arrive soon!
+          </p>
+          <button type="button" class="ok" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li>Forgive and Baguette 2022</li>
+        <li>
+          <a target="_blank" href="https://icons8.com/icon/84026/menu"
+            >Menu icon by Icons8</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://iconmonstr.com/favorite-4-svg/"
+            >Heart icon by Iconmonstr</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://icons8.com/icon/85080/shopping-cart"
+            >Shopping Cart icon by Icons8</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="shop.js"></script>
+  </body>
+</html>
