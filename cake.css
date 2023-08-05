@@ -307,7 +307,7 @@
     object-fit: cover;
   }
   
-  .stars {
+  .body {
     grid-area: rate;
     display: flex;
     flex-direction: row;
@@ -316,8 +316,21 @@
     align-items: center;
     gap: 0.1em;
   }
+  .star_rating {
+    user-select: none;
+  }
   
-
+  .star {
+    font-size: 3rem;
+    color: #000;
+    background-color: unset;
+    border: none;
+  }
+  
+  .star:hover {
+    cursor: pointer;
+  }
+  
   .icon-1 {
     grid-area: info;
     display: flex;
@@ -327,29 +340,7 @@
     align-items: center;
     gap: 1em;
   }
-  .stars.disabled {
-    pointer-events: none;
-  }
-  .stars img {
-    opacity: 30%;
-    cursor: pointer;
-  }
   
-  .stars:hover img {
-    opacity: 100%;
-  }
-  
-  .stars img:hover {
-    opacity: 100%;
-  }
-  
-  .stars img:hover ~ img {
-    opacity: 30%;
-  }
-  
-  .stars img.active {
-    opacity: 100%;
-  }
   @media only screen and (max-width: 375px) {
     #contents {
       grid-template-columns: 0.1fr;

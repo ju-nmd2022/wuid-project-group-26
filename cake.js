@@ -1,15 +1,16 @@
-const starWrapper = document.querySelector(".stars");
-const stars = document.querySelectorAll(".stars img");
+const allStars = document.querySelectorAll('.star')
 
-stars.forEach((star, clickedIdx) => {
-    star.addEventListener("click", () => {
-        starWrapper.classList.add("disabled");
-        stars.forEach((otherStar, otherIdx) => {
-            if (otherIdx <= clickedIdx) {
-                otherStar.classList.add("active");
-            }
-        });
-        console.log(`star of index s{clickedIdx + 1} was clicked`);
-        // post to backend your star ranking 
-    });
-});
+allStars.forEach((star, i) => {
+    star.onclick = function () {
+        let current_star_level = i + 1;
+
+        allStars.forEach((star, j) => {
+            if (current_star_level >= j + 1) {
+              star.innerHTML = '&#9733';
+          } else {
+             star.innerHTML = '&#9734';
+          }
+            
+        })
+    }
+})
